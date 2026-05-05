@@ -1,0 +1,152 @@
+:root {
+  --bg: #0e1017;
+  --card: #181c27;
+  --text: #eef2ff;
+  --accent: #5c7cfa;
+  --danger: #f03e3e;
+  --border: #2e3242;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: var(--text);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+p {
+  margin: 0.5rem 0 0;
+  color: #cbd5e1;
+}
+
+.auth {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #2e3242;
+  background: #111827;
+  color: var(--text);
+}
+
+textarea {
+  min-height: 88px;
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4967ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.filters {
+  display: grid;
+  gap: 12px;
+}
+
+.tasks {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.task-card {
+  padding: 18px;
+  border-radius: 14px;
+  background: #111827;
+  border: 1px solid #2e3242;
+}
+
+.task-card h3 {
+  margin: 0 0 8px;
+}
+
+.task-card p {
+  margin: 0 0 8px;
+  color: #cbd5e1;
+}
+
+.task-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.small-btn {
+  flex: 1;
+  background: #262e4e;
+  border: 1px solid #3b4262;
+  color: var(--text);
+}
+
+.small-btn.danger {
+  background: var(--danger);
+}
